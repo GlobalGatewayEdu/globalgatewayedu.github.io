@@ -1,1 +1,2148 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Gateway Educational Services | Building Bright Futures, Beyond Borders</title>
+
+  <meta
+    name="description"
+    content="Gateway Educational Services provides O/A Levels tutoring, NUST Entry Test preparation, global university admissions consultancy, AI, STEM, Robotics, Coding, Programming, Python and Data Analytics education."
+  >
+
+  <meta name="theme-color" content="#123c69">
+
+  <style>
+
+    /* =========================
+       GLOBAL
+    ========================= */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+      color: #243447;
+      background: #f8fafc;
+      line-height: 1.65;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 90px 0;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 55px;
+    }
+
+    .section-header .eyebrow {
+      color: #0f766e;
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .section-header h2 {
+      font-size: 2.35rem;
+      line-height: 1.2;
+      color: #123c69;
+      margin-bottom: 15px;
+    }
+
+    .section-header p {
+      color: #64748b;
+      font-size: 1.02rem;
+    }
+
+    /* =========================
+       NAVIGATION
+    ========================= */
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.97);
+      border-bottom: 1px solid #e2e8f0;
+      backdrop-filter: blur(10px);
+    }
+
+    .nav-inner {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-mark {
+      width: 43px;
+      height: 43px;
+      border-radius: 10px;
+      background: #123c69;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      font-weight: 900;
+    }
+
+    .brand-name {
+      color: #123c69;
+      font-size: 1.05rem;
+      font-weight: 800;
+      line-height: 1.15;
+    }
+
+    .brand-tagline {
+      display: block;
+      color: #64748b;
+      font-size: 0.67rem;
+      font-weight: 500;
+      margin-top: 3px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      color: #475569;
+      font-size: 0.9rem;
+      font-weight: 650;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: #0f766e;
+    }
+
+    .nav-cta {
+      background: #0f766e;
+      color: white !important;
+      padding: 10px 18px;
+      border-radius: 7px;
+    }
+
+    .nav-cta:hover {
+      background: #0b625c;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 85% 20%, rgba(15,118,110,0.12), transparent 30%),
+        radial-gradient(circle at 10% 80%, rgba(18,60,105,0.08), transparent 30%),
+        linear-gradient(135deg, #eef6ff 0%, #f8fbff 50%, #effcf9 100%);
+      padding: 105px 0 95px;
+    }
+
+    .hero-content {
+      max-width: 940px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 15px;
+      border-radius: 30px;
+      background: white;
+      border: 1px solid #dbeafe;
+      color: #0f766e;
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.7px;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+      box-shadow: 0 4px 15px rgba(15, 23, 42, 0.05);
+    }
+
+    .hero h1 {
+      color: #123c69;
+      font-size: clamp(2.6rem, 6vw, 4.4rem);
+      line-height: 1.05;
+      letter-spacing: -1.5px;
+      margin-bottom: 15px;
+    }
+
+    .hero-subtitle {
+      color: #0f766e;
+      font-size: clamp(1.2rem, 2.5vw, 1.55rem);
+      font-weight: 700;
+      margin-bottom: 25px;
+    }
+
+    .hero-description {
+      max-width: 850px;
+      margin: auto;
+      color: #475569;
+      font-size: 1.08rem;
+    }
+
+    .hero-description strong {
+      color: #123c69;
+    }
+
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 13px;
+      margin-top: 34px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 23px;
+      border-radius: 8px;
+      font-weight: 750;
+      font-size: 0.94rem;
+      transition: all 0.2s ease;
+    }
+
+    .button-primary {
+      background: #0f766e;
+      color: white;
+      box-shadow: 0 6px 18px rgba(15,118,110,0.18);
+    }
+
+    .button-primary:hover {
+      transform: translateY(-2px);
+      background: #0b625c;
+    }
+
+    .button-outline {
+      background: white;
+      color: #123c69;
+      border: 1px solid #cbd5e1;
+    }
+
+    .button-outline:hover {
+      border-color: #123c69;
+      transform: translateY(-2px);
+    }
+
+    /* =========================
+       TRUST STRIP
+    ========================= */
+
+    .trust-strip {
+      background: white;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      text-align: center;
+    }
+
+    .trust-item {
+      padding: 24px 15px;
+      border-right: 1px solid #e2e8f0;
+    }
+
+    .trust-item:last-child {
+      border-right: none;
+    }
+
+    .trust-number {
+      color: #123c69;
+      font-size: 1.35rem;
+      font-weight: 850;
+    }
+
+    .trust-label {
+      color: #64748b;
+      font-size: 0.82rem;
+      margin-top: 3px;
+    }
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    .about {
+      background: white;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-highlight {
+      background: #123c69;
+      color: white;
+      padding: 42px;
+      border-radius: 16px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-highlight::after {
+      content: "";
+      position: absolute;
+      width: 170px;
+      height: 170px;
+      border: 30px solid rgba(255,255,255,0.06);
+      border-radius: 50%;
+      right: -70px;
+      bottom: -70px;
+    }
+
+    .about-highlight h3 {
+      font-size: 1.7rem;
+      line-height: 1.25;
+      margin-bottom: 15px;
+    }
+
+    .about-highlight p {
+      color: #dbeafe;
+      font-size: 0.95rem;
+    }
+
+    .about-text h2 {
+      color: #123c69;
+      font-size: 2.2rem;
+      margin-bottom: 18px;
+    }
+
+    .about-text p {
+      color: #64748b;
+      margin-bottom: 16px;
+    }
+
+    /* =========================
+       WHY US
+    ========================= */
+
+    .why-us {
+      background: #f8fafc;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .feature-card {
+      background: white;
+      padding: 31px 27px;
+      border: 1px solid #e2e8f0;
+      border-radius: 13px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(15,23,42,0.07);
+    }
+
+    .feature-icon {
+      width: 47px;
+      height: 47px;
+      border-radius: 10px;
+      background: #ecfdf5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.35rem;
+      margin-bottom: 17px;
+    }
+
+    .feature-card h3 {
+      color: #123c69;
+      font-size: 1.08rem;
+      margin-bottom: 8px;
+    }
+
+    .feature-card p {
+      color: #64748b;
+      font-size: 0.91rem;
+    }
+
+    /* =========================
+       SESSION FORMATS
+    ========================= */
+
+    .sessions {
+      background: white;
+    }
+
+    .session-grid {
+      max-width: 950px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .session-card {
+      border: 1px solid #dbe4ee;
+      border-radius: 14px;
+      padding: 36px;
+      background: #fbfdff;
+      position: relative;
+    }
+
+    .session-card::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 20px;
+      bottom: 20px;
+      width: 4px;
+      background: #0f766e;
+      border-radius: 0 5px 5px 0;
+    }
+
+    .session-card h3 {
+      color: #123c69;
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+    }
+
+    .session-card p {
+      color: #64748b;
+      font-size: 0.94rem;
+    }
+
+    .session-card strong {
+      color: #0f766e;
+    }
+
+    /* =========================
+       SERVICES
+    ========================= */
+
+    .services {
+      background: #eef6ff;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      background: white;
+      padding: 31px;
+      border-radius: 14px;
+      border: 1px solid #dbeafe;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 13px 30px rgba(15,23,42,0.08);
+    }
+
+    .service-number {
+      color: #0f766e;
+      font-size: 0.76rem;
+      font-weight: 850;
+      letter-spacing: 1.5px;
+      margin-bottom: 10px;
+    }
+
+    .service-card h3 {
+      color: #123c69;
+      font-size: 1.16rem;
+      margin-bottom: 11px;
+      line-height: 1.3;
+    }
+
+    .service-card p {
+      color: #64748b;
+      font-size: 0.91rem;
+    }
+
+    .service-tags {
+      margin-top: 17px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .service-tag {
+      background: #f1f5f9;
+      color: #475569;
+      padding: 5px 8px;
+      border-radius: 5px;
+      font-size: 0.7rem;
+      font-weight: 650;
+    }
+
+    /* =========================
+       RESULTS
+    ========================= */
+
+    .results {
+      background: white;
+    }
+
+    .results-grid {
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .result-card {
+      padding: 34px;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      background: #f8fafc;
+    }
+
+    .result-card h3 {
+      color: #123c69;
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+    }
+
+    .achievement-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .achievement {
+      background: #ecfdf5;
+      color: #0f766e;
+      border: 1px solid #ccefe5;
+      border-radius: 7px;
+      padding: 9px 12px;
+      font-weight: 800;
+      font-size: 0.82rem;
+    }
+
+    .result-card p {
+      margin-top: 20px;
+      color: #64748b;
+      font-size: 0.91rem;
+    }
+
+    /* =========================
+       TESTIMONIALS
+    ========================= */
+
+    .reviews {
+      background: #f8fafc;
+    }
+
+    .review-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .review-card {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 13px;
+      padding: 29px;
+    }
+
+    .quote-mark {
+      color: #0f766e;
+      font-size: 2.5rem;
+      line-height: 0.7;
+      font-weight: 900;
+      margin-bottom: 14px;
+    }
+
+    .review-card p {
+      color: #475569;
+      font-size: 0.92rem;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+
+    .review-name {
+      color: #123c69;
+      font-weight: 800;
+      font-size: 0.88rem;
+    }
+
+    .review-role {
+      color: #94a3b8;
+      font-size: 0.76rem;
+    }
+
+    .placeholder-note {
+      margin-top: 35px;
+      text-align: center;
+      color: #94a3b8;
+      font-size: 0.78rem;
+    }
+
+    /* =========================
+       FACULTY
+    ========================= */
+
+    .faculty {
+      background: white;
+    }
+
+    .faculty-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .faculty-card {
+      display: flex;
+      gap: 22px;
+      padding: 30px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+    }
+
+    .faculty-avatar {
+      flex-shrink: 0;
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      background: #123c69;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 850;
+      font-size: 1rem;
+    }
+
+    .faculty-info h3 {
+      color: #123c69;
+      font-size: 1.12rem;
+      margin-bottom: 3px;
+    }
+
+    .faculty-role {
+      color: #0f766e;
+      font-size: 0.8rem;
+      font-weight: 750;
+      margin-bottom: 13px;
+    }
+
+    .faculty-info ul {
+      padding-left: 17px;
+      color: #64748b;
+      font-size: 0.83rem;
+    }
+
+    .faculty-info li {
+      margin-bottom: 5px;
+    }
+
+    /* =========================
+       FINAL CTA
+    ========================= */
+
+    .cta {
+      position: relative;
+      overflow: hidden;
+      background: #123c69;
+      color: white;
+      text-align: center;
+      padding: 85px 0;
+    }
+
+    .cta::before {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      border: 45px solid rgba(255,255,255,0.04);
+      border-radius: 50%;
+      left: -100px;
+      top: -100px;
+    }
+
+    .cta-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .cta h2 {
+      font-size: 2.45rem;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    .cta p {
+      color: #dbeafe;
+      font-size: 1rem;
+    }
+
+    .cta-buttons {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 11px;
+    }
+
+    .cta .button-primary {
+      background: #0f766e;
+    }
+
+    .cta .button-outline {
+      background: white;
+      color: #123c69;
+      border: none;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      background: #0b223b;
+      color: #94a3b8;
+      padding: 35px 0;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .footer-brand strong {
+      color: white;
+      font-size: 0.98rem;
+    }
+
+    .footer-brand p {
+      font-size: 0.75rem;
+      margin-top: 4px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      font-size: 0.78rem;
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
+    .copyright {
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      margin-top: 25px;
+      padding-top: 22px;
+      font-size: 0.73rem;
+    }
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 900px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .trust-item:nth-child(2) {
+        border-right: none;
+      }
+
+      .trust-item:nth-child(3),
+      .trust-item:nth-child(4) {
+        border-top: 1px solid #e2e8f0;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .feature-grid,
+      .service-grid,
+      .review-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .faculty-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-content {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 650px) {
+
+      .section {
+        padding: 65px 0;
+      }
+
+      .hero {
+        padding: 75px 0 65px;
+      }
+
+      .hero h1 {
+        font-size: 2.65rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1.15rem;
+      }
+
+      .hero-description {
+        font-size: 0.96rem;
+      }
+
+      .section-header {
+        margin-bottom: 38px;
+      }
+
+      .section-header h2 {
+        font-size: 1.85rem;
+      }
+
+      .feature-grid,
+      .service-grid,
+      .review-grid,
+      .session-grid,
+      .results-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .faculty-card {
+        flex-direction: column;
+      }
+
+      .faculty-avatar {
+        width: 58px;
+        height: 58px;
+      }
+
+      .about-highlight {
+        padding: 30px;
+      }
+
+      .cta {
+        padding: 65px 0;
+      }
+
+      .cta h2 {
+        font-size: 1.9rem;
+      }
+
+      .brand-name {
+        font-size: 0.9rem;
+      }
+
+      .brand-tagline {
+        font-size: 0.58rem;
+      }
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<nav class="navbar">
+
+  <div class="container nav-inner">
+
+    <a href="#top" class="brand">
+
+      <div class="brand-mark">
+        G
+      </div>
+
+      <div>
+        <div class="brand-name">
+          Gateway Educational Services
+        </div>
+
+        <span class="brand-tagline">
+          Building Bright Futures, Beyond Borders
+        </span>
+      </div>
+
+    </a>
+
+
+    <div class="nav-links">
+
+      <a href="#about">About</a>
+
+      <a href="#why-us">Why Us</a>
+
+      <a href="#services">Services</a>
+
+      <a href="#results">Results</a>
+
+      <a href="#faculty">Faculty</a>
+
+      <a href="#contact" class="nav-cta">
+        Contact Us
+      </a>
+
+    </div>
+
+  </div>
+
+</nav>
+
+
+<main id="top">
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<header class="hero">
+
+  <div class="container hero-content">
+
+    <div class="hero-badge">
+      Academic Excellence • Future-Ready Skills
+    </div>
+
+    <h1>
+      Building Bright Futures,<br>
+      Beyond Borders
+    </h1>
+
+    <div class="hero-subtitle">
+      Your Child's Academic Journey. Our Expert Guidance.
+    </div>
+
+    <p class="hero-description">
+
+      Are you planning your child's path to a bright future, but not sure
+      where to start? From <strong>AI, STEM, Robotics & Coding</strong> for
+      young learners to <strong>O/A Levels, NUST Entry Test preparation,
+      and admissions abroad</strong>, we guide your child every step of the
+      way — taught by <strong>NUST professors, PhD holders, and academic
+      toppers with 10+ years of experience.</strong>
+
+      Personalized one-on-one sessions or focused small groups, tailored
+      to your child's pace.
+
+    </p>
+
+    <div class="hero-buttons">
+
+      <a href="#contact" class="button button-primary">
+        Book a Free Consultation
+      </a>
+
+      <a href="#services" class="button button-outline">
+        Explore Our Services
+      </a>
+
+    </div>
+
+  </div>
+
+</header>
+
+
+<!-- =========================
+     TRUST STRIP
+========================= -->
+
+<div class="trust-strip">
+
+  <div class="container trust-grid">
+
+    <div class="trust-item">
+      <div class="trust-number">10+ Years</div>
+      <div class="trust-label">Teaching Experience</div>
+    </div>
+
+    <div class="trust-item">
+      <div class="trust-number">NUST</div>
+      <div class="trust-label">University-Level Faculty</div>
+    </div>
+
+    <div class="trust-item">
+      <div class="trust-number">4 Students</div>
+      <div class="trust-label">Maximum Group Size</div>
+    </div>
+
+    <div class="trust-item">
+      <div class="trust-number">Global</div>
+      <div class="trust-label">University Admissions</div>
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- =========================
+     ABOUT US
+========================= -->
+
+<section id="about" class="section about">
+
+  <div class="container about-grid">
+
+    <div class="about-highlight">
+
+      <h3>
+        Education that prepares students for both today and tomorrow.
+      </h3>
+
+      <p>
+        From strong academic foundations to global opportunities and
+        future-focused technology skills, we help students move forward
+        with confidence.
+      </p>
+
+    </div>
+
+
+    <div class="about-text">
+
+      <div class="section-header" style="text-align:left; margin:0 0 20px 0;">
+
+        <div class="eyebrow">
+          About Gateway
+        </div>
+
+        <h2>
+          More Than Tutoring. A Gateway to Opportunity.
+        </h2>
+
+      </div>
+
+      <p>
+        <strong>Gateway Educational Services</strong> is an educational
+        platform dedicated to helping students achieve academic excellence
+        while developing the knowledge and skills needed for an increasingly
+        competitive world.
+      </p>
+
+      <p>
+        We provide academic tutoring, competitive examination preparation,
+        university admissions consultancy, and future-focused learning in
+        AI, STEM, Robotics, Coding, Programming, Python and Data Analytics.
+      </p>
+
+      <p>
+        Our goal is simple: to provide students with the right guidance,
+        confidence and opportunities to build a bright future —
+        <strong>locally and beyond borders.</strong>
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     WHY PARENTS CHOOSE US
+========================= -->
+
+<section id="why-us" class="section why-us">
+
+  <div class="container">
+
+    <div class="section-header">
+
+      <div class="eyebrow">
+        Why Gateway
+      </div>
+
+      <h2>
+        Why Parents Choose Us
+      </h2>
+
+      <p>
+        Because choosing the right educational guidance can make a lasting
+        difference in a child's academic journey.
+      </p>
+
+    </div>
+
+
+    <div class="feature-grid">
+
+
+      <div class="feature-card">
+
+        <div class="feature-icon">🎓</div>
+
+        <h3>
+          Highly Qualified Faculty
+        </h3>
+
+        <p>
+          Learn from NUST professors, PhD holders, top university graduates
+          and experienced educators.
+        </p>
+
+      </div>
+
+
+      <div class="feature-card">
+
+        <div class="feature-icon">★</div>
+
+        <h3>
+          10+ Years of Experience
+        </h3>
+
+        <p>
+          Our instructors bring extensive teaching, mentoring and academic
+          experience.
+        </p>
+
+      </div>
+
+
+      <div class="feature-card">
+
+        <div class="feature-icon">🏆</div>
+
+        <h3>
+          Proven Academic Results
+        </h3>
+
+        <p>
+          Students have achieved outstanding O/A Level results and
+          competitive international scholarships.
+        </p>
+
+      </div>
+
+
+      <div class="feature-card">
+
+        <div class="feature-icon">◉</div>
+
+        <h3>
+          Personalized Learning
+        </h3>
+
+        <p>
+          Lessons can be tailored to the student's level, pace, strengths
+          and academic goals.
+        </p>
+
+      </div>
+
+
+      <div class="feature-card">
+
+        <div class="feature-icon">👥</div>
+
+        <h3>
+          Focused Small Groups
+        </h3>
+
+        <p>
+          Small-group packages are limited to a maximum of four students.
+        </p>
+
+      </div>
+
+
+      <div class="feature-card">
+
+        <div class="feature-icon">🤖</div>
+
+        <h3>
+          Future-Ready Skills
+        </h3>
+
+        <p>
+          Students can explore AI, STEM, Robotics, Coding, Python and
+          Data Analytics.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     SESSION FORMATS
+========================= -->
+
+<section class="section sessions">
+
+  <div class="container">
+
+    <div class="section-header">
+
+      <div class="eyebrow">
+        How We Teach
+      </div>
+
+      <h2>
+        Learning Formats Designed Around Your Child
+      </h2>
+
+      <p>
+        Choose the format that best suits your child's learning needs.
+      </p>
+
+    </div>
+
+
+    <div class="session-grid">
+
+
+      <div class="session-card">
+
+        <h3>
+          One-to-One Personal Sessions
+        </h3>
+
+        <p>
+          Individual attention with lessons tailored to the student's
+          learning pace, academic level, strengths, areas for improvement
+          and goals.
+        </p>
+
+      </div>
+
+
+      <div class="session-card">
+
+        <h3>
+          Small Group Packages
+        </h3>
+
+        <p>
+          Focused and interactive learning in groups of
+          <strong>maximum 4 students</strong>, combining personalized
+          attention with collaborative learning.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section id="services" class="section services">
+
+  <div class="container">
+
+    <div class="section-header">
+
+      <div class="eyebrow">
+        What We Offer
+      </div>
+
+      <h2>
+        Our Educational Services
+      </h2>
+
+      <p>
+        From academic excellence to future-ready skills and global
+        opportunities.
+      </p>
+
+    </div>
+
+
+    <div class="service-grid">
+
+
+      <!-- SERVICE 1 -->
+
+      <div class="service-card">
+
+        <div class="service-number">
+          01
+        </div>
+
+        <h3>
+          O/A Levels Tutoring
+        </h3>
+
+        <p>
+          Build strong conceptual foundations and prepare effectively
+          for school and board examinations.
+        </p>
+
+        <div class="service-tags">
+
+          <span class="service-tag">Mathematics</span>
+          <span class="service-tag">Physics</span>
+          <span class="service-tag">Chemistry</span>
+          <span class="service-tag">Biology</span>
+          <span class="service-tag">Computer Science</span>
+
+        </div>
+
+      </div>
+
+
+      <!-- SERVICE 2 -->
+
+      <div class="service-card">
+
+        <div class="service-number">
+          02
+        </div>
+
+        <h3>
+          NUST Entry Test Preparation
+        </h3>
+
+        <p>
+          Structured preparation focused on concepts, problem solving,
+          practice, time management and examination strategy.
+        </p>
+
+        <div class="service-tags">
+
+          <span class="service-tag">Concept Building</span>
+          <span class="service-tag">Practice</span>
+          <span class="service-tag">Test Strategy</span>
+
+        </div>
+
+      </div>
+
+
+      <!-- SERVICE 3 -->
+
+      <div class="service-card">
+
+        <div class="service-number">
+          03
+        </div>
+
+        <h3>
+          Global University Admissions
+        </h3>
+
+        <p>
+          Guidance for university selection, applications, scholarships
+          and planning for higher education abroad.
+        </p>
+
+        <div class="service-tags">
+
+          <span class="service-tag">University Selection</span>
+          <span class="service-tag">Applications</span>
+          <span class="service-tag">Scholarships</span>
+
+        </div>
+
+      </div>
+
+
+      <!-- SERVICE 4 -->
+
+      <div class="service-card">
+
+        <div class="service-number">
+          04
+        </div>
+
+        <h3>
+          AI / STEM / Robotics / Coding
+        </h3>
+
+        <p>
+          Engaging future-skills programs designed for
+          <strong>Grade 5–8 students</strong>, introducing young learners
+          to technology, creativity and innovation.
+        </p>
+
+        <div class="service-tags">
+
+          <span class="service-tag">AI</span>
+          <span class="service-tag">STEM</span>
+          <span class="service-tag">Robotics</span>
+          <span class="service-tag">Coding</span>
+
+        </div>
+
+      </div>
+
+
+      <!-- SERVICE 5 -->
+
+      <div class="service-card">
+
+        <div class="service-number">
+          05
+        </div>
+
+        <h3>
+          Programming, Python & Data Analytics
+        </h3>
+
+        <p>
+          Practical learning in programming, Python, data analysis and
+          digital skills for students looking to build technical expertise.
+        </p>
+
+        <div class="service-tags">
+
+          <span class="service-tag">Programming</span>
+          <span class="service-tag">Python</span>
+          <span class="service-tag">Data Analytics</span>
+
+        </div>
+
+      </div>
+
+
+      <!-- SERVICE 6 -->
+
+      <div class="service-card">
+
+        <div class="service-number">
+          06
+        </div>
+
+        <h3>
+          Academic Guidance & Mentoring
+        </h3>
+
+        <p>
+          Personalized educational guidance to help students make informed
+          academic decisions and plan their next steps with confidence.
+        </p>
+
+        <div class="service-tags">
+
+          <span class="service-tag">Mentoring</span>
+          <span class="service-tag">Academic Planning</span>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     STUDENT RESULTS
+========================= -->
+
+<section id="results" class="section results">
+
+  <div class="container">
+
+    <div class="section-header">
+
+      <div class="eyebrow">
+        Student Achievement
+      </div>
+
+      <h2>
+        Results That Speak for Themselves
+      </h2>
+
+      <p>
+        Strong outcomes come from strong foundations, expert guidance
+        and consistent effort.
+      </p>
+
+    </div>
+
+
+    <div class="results-grid">
+
+
+      <div class="result-card">
+
+        <h3>
+          Muhammad Raahim
+        </h3>
+
+        <div class="achievement-grid">
+
+          <span class="achievement">
+            5 A*s — A Levels
+          </span>
+
+          <span class="achievement">
+            8 A*s — O Levels
+          </span>
+
+          <span class="achievement">
+            Fully Funded KAIST Scholarship
+          </span>
+
+        </div>
+
+        <p>
+          Outstanding academic achievement followed by a fully funded
+          scholarship at KAIST.
+        </p>
+
+      </div>
+
+
+      <div class="result-card">
+
+        <h3>
+          Muhammad Sarim
+        </h3>
+
+        <div class="achievement-grid">
+
+          <span class="achievement">
+            4 A*s — O Levels
+          </span>
+
+          <span class="achievement">
+            3 As — O Levels
+          </span>
+
+        </div>
+
+        <p>
+          Exceptional O-Level results supported by focused preparation
+          and strong conceptual understanding.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     STUDENT REVIEWS
+========================= -->
+
+<section class="section reviews">
+
+  <div class="container">
+
+    <div class="section-header">
+
+      <div class="eyebrow">
+        Student Voice
+      </div>
+
+      <h2>
+        What Our Students Say
+      </h2>
+
+      <p>
+        Learning is about more than marks. It is about building understanding,
+        confidence and a strong foundation for the future.
+      </p>
+
+    </div>
+
+
+    <div class="review-grid">
+
+
+      <div class="review-card">
+
+        <div class="quote-mark">
+          “
+        </div>
+
+        <p>
+          The guidance I received wasn't just about scoring well — it was
+          about understanding concepts deeply enough to build a real future
+          on them. That foundation is a big part of why I'm now studying
+          at KAIST on a full scholarship.
+        </p>
+
+        <div class="review-name">
+          Muhammad Raahim
+        </div>
+
+        <div class="review-role">
+          KAIST Scholarship Recipient
+        </div>
+
+      </div>
+
+
+      <div class="review-card">
+
+        <div class="quote-mark">
+          “
+        </div>
+
+        <p>
+          What made the difference for me was having instructors who didn't
+          just teach the syllabus, but made sure I actually understood the
+          subject. That's what helped me score 4 A*s and 3 As in my O Levels.
+        </p>
+
+        <div class="review-name">
+          Muhammad Sarim
+        </div>
+
+        <div class="review-role">
+          O-Level Student
+        </div>
+
+      </div>
+
+
+      <div class="review-card">
+
+        <div class="quote-mark">
+          “
+        </div>
+
+        <p>
+          The teaching helped me understand concepts instead of simply
+          memorizing them. I became much more confident in my exams.
+        </p>
+
+        <div class="review-name">
+          Sample Student Testimonial
+        </div>
+
+        <div class="review-role">
+          Replace with verified review
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+    <div class="placeholder-note">
+      Sample testimonials should be replaced with verified student reviews
+      before publication.
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     PARENT REVIEWS
+========================= -->
+
+<section class="section">
+
+  <div class="container">
+
+    <div class="section-header">
+
+      <div class="eyebrow">
+        Parent Perspective
+      </div>
+
+      <h2>
+        What Parents Say
+      </h2>
+
+      <p>
+        The right educational support gives parents confidence and students
+        the opportunity to grow.
+      </p>
+
+    </div>
+
+
+    <div class="review-grid">
+
+
+      <div class="review-card">
+
+        <div class="quote-mark">
+          “
+        </div>
+
+        <p>
+          The teachers are knowledgeable, supportive and genuinely invested
+          in my child's progress.
+        </p>
+
+        <div class="review-name">
+          Sample Parent Review
+        </div>
+
+        <div class="review-role">
+          Replace with verified review
+        </div>
+
+      </div>
+
+
+      <div class="review-card">
+
+        <div class="quote-mark">
+          “
+        </div>
+
+        <p>
+          We appreciated the individual attention and clear guidance
+          throughout our child's preparation.
+        </p>
+
+        <div class="review-name">
+          Sample Parent Review
+        </div>
+
+        <div class="review-role">
+          Replace with verified review
+        </div>
+
+      </div>
+
+
+      <div class="review-card">
+
+        <div class="quote-mark">
+          “
+        </div>
+
+        <p>
+          The combination of academic support and future-focused skills
+          makes this a great learning environment.
+        </p>
+
+        <div class="review-name">
+          Sample Parent Review
+        </div>
+
+        <div class="review-role">
+          Replace with verified review
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     FACULTY
+========================= -->
+
+<section id="faculty" class="section faculty">
+
+  <div class="container">
+
+    <div class="section-header">
+
+      <div class="eyebrow">
+        Our Educators
+      </div>
+
+      <h2>
+        Meet Our Faculty
+      </h2>
+
+      <p>
+        Strong academic credentials, university-level experience and a
+        commitment to student success.
+      </p>
+
+    </div>
+
+
+    <div class="faculty-grid">
+
+
+      <!-- AHSAN -->
+
+      <div class="faculty-card">
+
+        <div class="faculty-avatar">
+          AS
+        </div>
+
+        <div class="faculty-info">
+
+          <h3>
+            Dr. Ahsan Shahzad
+          </h3>
+
+          <div class="faculty-role">
+            Assistant Professor at NUST
+          </div>
+
+          <ul>
+
+            <li>
+              PhD in EECS, GIST, South Korea
+            </li>
+
+            <li>
+              Best Thesis Award recipient
+            </li>
+
+            <li>
+              Academic topper and scholarship holder
+            </li>
+
+            <li>
+              Graduate of UET Lahore with Honors
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+
+      <!-- YASIN -->
+
+      <div class="faculty-card">
+
+        <div class="faculty-avatar">
+          MY
+        </div>
+
+        <div class="faculty-info">
+
+          <h3>
+            Dr. Muhammad Yasin
+          </h3>
+
+          <div class="faculty-role">
+            Assistant Professor at NUST
+          </div>
+
+          <ul>
+
+            <li>
+              PhD in Electrical & Electronics Engineering,
+              New York University
+            </li>
+
+            <li>
+              MS, Masdar Institute of Science & Technology
+            </li>
+
+            <li>
+              BS Electrical Engineering, UET Lahore
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+
+      <!-- MARIAM -->
+
+      <div class="faculty-card">
+
+        <div class="faculty-avatar">
+          MB
+        </div>
+
+        <div class="faculty-info">
+
+          <h3>
+            Mariam Bashir
+          </h3>
+
+          <div class="faculty-role">
+            Electrical Engineering & Data Analytics Educator
+          </div>
+
+          <ul>
+
+            <li>
+              MS Electrical Engineering, COMSATS Lahore
+            </li>
+
+            <li>
+              BS Electrical Engineering, UET Lahore
+            </li>
+
+            <li>
+              NUST Entry Test Topper, 2006
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+
+      <!-- AFEERA -->
+
+      <div class="faculty-card">
+
+        <div class="faculty-avatar">
+          AK
+        </div>
+
+        <div class="faculty-info">
+
+          <h3>
+            Afeera Khan
+          </h3>
+
+          <div class="faculty-role">
+            Lecturer, FG Postgraduate College
+          </div>
+
+          <ul>
+
+            <li>
+              MSc Computer Science, University of Wah
+            </li>
+
+            <li>
+              Lecturer at FG Postgraduate College
+            </li>
+
+            <li>
+              Computer Science & Programming Education
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     FINAL CTA
+========================= -->
+
+<section id="contact" class="cta">
+
+  <div class="container cta-content">
+
+    <h2>
+      Ready to Give Your Child the Right Gateway?
+    </h2>
+
+    <p>
+      Whether your child needs academic support, exam preparation,
+      university admissions guidance or future-ready technology skills,
+      we're here to help.
+    </p>
+
+
+    <div class="cta-buttons">
+
+
+      <!-- EMAIL -->
+
+      <a
+        href="mailto:engr.mariam.bashir@gmail.com?subject=Free Consultation - Gateway Educational Services"
+        class="button button-primary"
+      >
+        ✉ Book a Free Consultation
+      </a>
+
+
+      <!-- PHONE -->
+
+      <a
+        href="tel:+30199878731"
+        class="button button-outline"
+      >
+        📞 Call Us
+      </a>
+
+
+      <!-- WHATSAPP -->
+
+      <a
+        href="https://wa.me/30199878731"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="button button-outline"
+      >
+        💬 WhatsApp
+      </a>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-content">
+
+      <div class="footer-brand">
+
+        <strong>
+          Gateway Educational Services
+        </strong>
+
+        <p>
+          Building Bright Futures, Beyond Borders
+        </p>
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <a href="#about">About</a>
+
+        <a href="#why-us">Why Us</a>
+
+        <a href="#services">Services</a>
+
+        <a href="#results">Results</a>
+
+        <a href="#faculty">Faculty</a>
+
+        <a href="#contact">Contact</a>
+
+      </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+      © 2026 Gateway Educational Services. All rights reserved.
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>
