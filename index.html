@@ -1,24 +1,32 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Gateway Educational Services | Building Bright Futures, Beyond Borders</title>
+  <title>Global Gateway Academics | Building Bright Futures, Beyond Borders</title>
 
   <meta
     name="description"
-    content="Gateway Educational Services provides O/A Levels tutoring, NUST Entry Test preparation, global university admissions consultancy, AI, STEM, Robotics, Coding, Programming, Python and Data Analytics education."
+    content="Global Gateway Academics provides O/A Levels tutoring, university entrance exam preparation, global university admissions consultancy, AI, STEM, Robotics, Coding, Programming, Python and Data Analytics education."
   >
 
-  <meta name="theme-color" content="#123c69">
+  <meta name="theme-color" content="#0F2D54">
 
   <style>
 
-    /* =========================
-       GLOBAL
-    ========================= */
+    :root {
+      --navy: #0F2D54;
+      --navy-light: #173f70;
+      --gold: #D4A017;
+      --gold-dark: #b8870f;
+      --teal: #0f766e;
+      --text: #243447;
+      --muted: #64748b;
+      --light-grey: #f1f4f7;
+      --border: #e2e8f0;
+      --white: #ffffff;
+    }
 
     * {
       margin: 0;
@@ -38,7 +46,7 @@
         Roboto,
         Arial,
         sans-serif;
-      color: #243447;
+      color: var(--text);
       background: #f8fafc;
       line-height: 1.65;
     }
@@ -46,10 +54,6 @@
     a {
       text-decoration: none;
       color: inherit;
-    }
-
-    img {
-      max-width: 100%;
     }
 
     .container {
@@ -62,32 +66,38 @@
       padding: 90px 0;
     }
 
+    .brand-gold {
+      color: var(--gold);
+      font-weight: 850;
+    }
+
     .section-header {
       text-align: center;
-      max-width: 760px;
+      max-width: 820px;
       margin: 0 auto 55px;
     }
 
     .section-header .eyebrow {
-      color: #0f766e;
-      font-size: 0.82rem;
-      font-weight: 800;
+      color: var(--teal);
+      font-size: 1rem;
+      font-weight: 850;
       letter-spacing: 2px;
       text-transform: uppercase;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
 
     .section-header h2 {
       font-size: 2.35rem;
       line-height: 1.2;
-      color: #123c69;
+      color: var(--navy);
       margin-bottom: 15px;
     }
 
     .section-header p {
-      color: #64748b;
-      font-size: 1.02rem;
+      color: var(--muted);
+      font-size: 1.08rem;
     }
+
 
     /* =========================
        NAVIGATION
@@ -97,13 +107,14 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: rgba(255, 255, 255, 0.97);
-      border-bottom: 1px solid #e2e8f0;
+      background: rgba(255,255,255,0.98);
+      border-bottom: 1px solid var(--border);
       backdrop-filter: blur(10px);
+      box-shadow: 0 2px 12px rgba(15,45,84,0.04);
     }
 
     .nav-inner {
-      min-height: 76px;
+      min-height: 86px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -113,35 +124,40 @@
     .brand {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 15px;
     }
 
     .brand-mark {
-      width: 43px;
-      height: 43px;
-      border-radius: 10px;
-      background: #123c69;
-      color: white;
+      width: 54px;
+      height: 54px;
+      border-radius: 12px;
+      background: var(--navy);
+      color: var(--gold);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.1rem;
+      font-size: 1.4rem;
       font-weight: 900;
+      box-shadow: 0 6px 18px rgba(15,45,84,0.15);
     }
 
     .brand-name {
-      color: #123c69;
-      font-size: 1.05rem;
-      font-weight: 800;
+      color: var(--navy);
+      font-size: 1.35rem;
+      font-weight: 850;
       line-height: 1.15;
+    }
+
+    .brand-name .global-gateway {
+      color: var(--gold);
     }
 
     .brand-tagline {
       display: block;
-      color: #64748b;
-      font-size: 0.67rem;
-      font-weight: 500;
-      margin-top: 3px;
+      color: var(--muted);
+      font-size: 0.88rem;
+      font-weight: 600;
+      margin-top: 5px;
     }
 
     .nav-links {
@@ -158,19 +174,21 @@
     }
 
     .nav-links a:hover {
-      color: #0f766e;
+      color: var(--gold);
     }
 
     .nav-cta {
-      background: #0f766e;
+      background: var(--navy);
       color: white !important;
-      padding: 10px 18px;
-      border-radius: 7px;
+      padding: 11px 19px;
+      border-radius: 8px;
     }
 
     .nav-cta:hover {
-      background: #0b625c;
+      background: var(--gold);
+      color: var(--navy) !important;
     }
+
 
     /* =========================
        HERO
@@ -180,14 +198,14 @@
       position: relative;
       overflow: hidden;
       background:
-        radial-gradient(circle at 85% 20%, rgba(15,118,110,0.12), transparent 30%),
-        radial-gradient(circle at 10% 80%, rgba(18,60,105,0.08), transparent 30%),
-        linear-gradient(135deg, #eef6ff 0%, #f8fbff 50%, #effcf9 100%);
+        radial-gradient(circle at 85% 20%, rgba(212,160,23,0.12), transparent 30%),
+        radial-gradient(circle at 10% 80%, rgba(15,45,84,0.08), transparent 30%),
+        linear-gradient(135deg, #eef6ff 0%, #f8fbff 50%, #fffaf0 100%);
       padding: 105px 0 95px;
     }
 
     .hero-content {
-      max-width: 940px;
+      max-width: 960px;
       margin: auto;
       text-align: center;
     }
@@ -196,43 +214,47 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      padding: 8px 15px;
+      padding: 11px 20px;
       border-radius: 30px;
       background: white;
       border: 1px solid #dbeafe;
-      color: #0f766e;
-      font-size: 0.8rem;
-      font-weight: 800;
-      letter-spacing: 0.7px;
+      color: var(--teal);
+      font-size: 1rem;
+      font-weight: 850;
+      letter-spacing: 1px;
       text-transform: uppercase;
-      margin-bottom: 22px;
-      box-shadow: 0 4px 15px rgba(15, 23, 42, 0.05);
+      margin-bottom: 25px;
+      box-shadow: 0 5px 18px rgba(15,23,42,0.06);
     }
 
     .hero h1 {
-      color: #123c69;
-      font-size: clamp(2.6rem, 6vw, 4.4rem);
+      color: var(--navy);
+      font-size: clamp(2.7rem, 6vw, 4.5rem);
       line-height: 1.05;
       letter-spacing: -1.5px;
       margin-bottom: 15px;
     }
 
+    .hero h1 .global-gateway {
+      color: var(--gold);
+    }
+
     .hero-subtitle {
-      color: #0f766e;
-      font-size: clamp(1.2rem, 2.5vw, 1.55rem);
-      font-weight: 700;
+      color: var(--teal);
+      font-size: clamp(1.25rem, 2.5vw, 1.6rem);
+      font-weight: 750;
       margin-bottom: 25px;
     }
 
     .hero-description {
-      max-width: 850px;
+      max-width: 880px;
       margin: auto;
       color: #475569;
       font-size: 1.08rem;
     }
 
     .hero-description strong {
-      color: #123c69;
+      color: var(--navy);
     }
 
     .hero-buttons {
@@ -255,62 +277,74 @@
     }
 
     .button-primary {
-      background: #0f766e;
+      background: var(--navy);
       color: white;
-      box-shadow: 0 6px 18px rgba(15,118,110,0.18);
+      box-shadow: 0 6px 18px rgba(15,45,84,0.18);
     }
 
     .button-primary:hover {
       transform: translateY(-2px);
-      background: #0b625c;
+      background: var(--gold);
+      color: var(--navy);
     }
 
     .button-outline {
       background: white;
-      color: #123c69;
+      color: var(--navy);
       border: 1px solid #cbd5e1;
     }
 
     .button-outline:hover {
-      border-color: #123c69;
+      border-color: var(--gold);
       transform: translateY(-2px);
     }
 
+
     /* =========================
-       TRUST STRIP
+       STRIKING POINTS
     ========================= */
 
     .trust-strip {
-      background: white;
-      border-bottom: 1px solid #e2e8f0;
+      background: var(--navy);
+      padding: 32px 0;
     }
 
     .trust-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      text-align: center;
+      gap: 15px;
     }
 
     .trust-item {
-      padding: 24px 15px;
-      border-right: 1px solid #e2e8f0;
+      text-align: center;
+      padding: 27px 18px;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-top: 4px solid var(--gold);
+      border-radius: 12px;
+      transition: transform 0.25s ease, background 0.25s ease;
     }
 
-    .trust-item:last-child {
-      border-right: none;
+    .trust-item:hover {
+      transform: translateY(-4px);
+      background: rgba(255,255,255,0.11);
     }
 
     .trust-number {
-      color: #123c69;
-      font-size: 1.35rem;
-      font-weight: 850;
+      color: var(--gold);
+      font-size: 1.6rem;
+      font-weight: 900;
+      line-height: 1.2;
     }
 
     .trust-label {
-      color: #64748b;
-      font-size: 0.82rem;
-      margin-top: 3px;
+      color: #e6edf5;
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-top: 8px;
+      line-height: 1.4;
     }
+
 
     /* =========================
        ABOUT
@@ -328,23 +362,13 @@
     }
 
     .about-highlight {
-      background: #123c69;
+      background: var(--navy);
       color: white;
       padding: 42px;
       border-radius: 16px;
       position: relative;
       overflow: hidden;
-    }
-
-    .about-highlight::after {
-      content: "";
-      position: absolute;
-      width: 170px;
-      height: 170px;
-      border: 30px solid rgba(255,255,255,0.06);
-      border-radius: 50%;
-      right: -70px;
-      bottom: -70px;
+      border-bottom: 5px solid var(--gold);
     }
 
     .about-highlight h3 {
@@ -359,15 +383,16 @@
     }
 
     .about-text h2 {
-      color: #123c69;
+      color: var(--navy);
       font-size: 2.2rem;
       margin-bottom: 18px;
     }
 
     .about-text p {
-      color: #64748b;
+      color: var(--muted);
       margin-bottom: 16px;
     }
+
 
     /* =========================
        WHY US
@@ -375,6 +400,15 @@
 
     .why-us {
       background: #f8fafc;
+    }
+
+    .why-us .section-header .eyebrow {
+      font-size: 1.1rem;
+    }
+
+    .why-us .section-header p {
+      font-size: 1.22rem;
+      line-height: 1.65;
     }
 
     .feature-grid {
@@ -386,14 +420,19 @@
     .feature-card {
       background: white;
       padding: 31px 27px;
-      border: 1px solid #e2e8f0;
+      border: 1px solid var(--border);
       border-radius: 13px;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
+    .feature-card.alt {
+      background: var(--light-grey);
+    }
+
     .feature-card:hover {
       transform: translateY(-4px);
-      box-shadow: 0 12px 28px rgba(15,23,42,0.07);
+      box-shadow: 0 12px 28px rgba(15,23,42,0.08);
+      border-color: rgba(212,160,23,0.45);
     }
 
     .feature-icon {
@@ -409,15 +448,16 @@
     }
 
     .feature-card h3 {
-      color: #123c69;
+      color: var(--navy);
       font-size: 1.08rem;
       margin-bottom: 8px;
     }
 
     .feature-card p {
-      color: #64748b;
+      color: var(--muted);
       font-size: 0.91rem;
     }
+
 
     /* =========================
        SESSION FORMATS
@@ -450,24 +490,25 @@
       top: 20px;
       bottom: 20px;
       width: 4px;
-      background: #0f766e;
+      background: var(--gold);
       border-radius: 0 5px 5px 0;
     }
 
     .session-card h3 {
-      color: #123c69;
+      color: var(--navy);
       font-size: 1.25rem;
       margin-bottom: 10px;
     }
 
     .session-card p {
-      color: #64748b;
+      color: var(--muted);
       font-size: 0.94rem;
     }
 
     .session-card strong {
-      color: #0f766e;
+      color: var(--teal);
     }
+
 
     /* =========================
        SERVICES
@@ -494,25 +535,26 @@
     .service-card:hover {
       transform: translateY(-4px);
       box-shadow: 0 13px 30px rgba(15,23,42,0.08);
+      border-color: rgba(212,160,23,0.45);
     }
 
     .service-number {
-      color: #0f766e;
-      font-size: 0.76rem;
-      font-weight: 850;
+      color: var(--gold);
+      font-size: 0.8rem;
+      font-weight: 900;
       letter-spacing: 1.5px;
       margin-bottom: 10px;
     }
 
     .service-card h3 {
-      color: #123c69;
+      color: var(--navy);
       font-size: 1.16rem;
       margin-bottom: 11px;
       line-height: 1.3;
     }
 
     .service-card p {
-      color: #64748b;
+      color: var(--muted);
       font-size: 0.91rem;
     }
 
@@ -532,6 +574,7 @@
       font-weight: 650;
     }
 
+
     /* =========================
        RESULTS
     ========================= */
@@ -550,13 +593,13 @@
 
     .result-card {
       padding: 34px;
-      border: 1px solid #e2e8f0;
+      border: 1px solid var(--border);
       border-radius: 14px;
       background: #f8fafc;
     }
 
     .result-card h3 {
-      color: #123c69;
+      color: var(--navy);
       font-size: 1.3rem;
       margin-bottom: 20px;
     }
@@ -568,9 +611,9 @@
     }
 
     .achievement {
-      background: #ecfdf5;
-      color: #0f766e;
-      border: 1px solid #ccefe5;
+      background: #fff8e6;
+      color: #8a6500;
+      border: 1px solid #efd88b;
       border-radius: 7px;
       padding: 9px 12px;
       font-weight: 800;
@@ -579,12 +622,13 @@
 
     .result-card p {
       margin-top: 20px;
-      color: #64748b;
+      color: var(--muted);
       font-size: 0.91rem;
     }
 
+
     /* =========================
-       TESTIMONIALS
+       REVIEWS
     ========================= */
 
     .reviews {
@@ -599,13 +643,13 @@
 
     .review-card {
       background: white;
-      border: 1px solid #e2e8f0;
+      border: 1px solid var(--border);
       border-radius: 13px;
       padding: 29px;
     }
 
     .quote-mark {
-      color: #0f766e;
+      color: var(--gold);
       font-size: 2.5rem;
       line-height: 0.7;
       font-weight: 900;
@@ -620,7 +664,7 @@
     }
 
     .review-name {
-      color: #123c69;
+      color: var(--navy);
       font-weight: 800;
       font-size: 0.88rem;
     }
@@ -636,6 +680,7 @@
       color: #94a3b8;
       font-size: 0.78rem;
     }
+
 
     /* =========================
        FACULTY
@@ -656,7 +701,7 @@
       gap: 22px;
       padding: 30px;
       background: #f8fafc;
-      border: 1px solid #e2e8f0;
+      border: 1px solid var(--border);
       border-radius: 14px;
     }
 
@@ -665,23 +710,23 @@
       width: 62px;
       height: 62px;
       border-radius: 50%;
-      background: #123c69;
-      color: white;
+      background: var(--navy);
+      color: var(--gold);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-weight: 850;
+      font-weight: 900;
       font-size: 1rem;
     }
 
     .faculty-info h3 {
-      color: #123c69;
+      color: var(--navy);
       font-size: 1.12rem;
       margin-bottom: 3px;
     }
 
     .faculty-role {
-      color: #0f766e;
+      color: var(--teal);
       font-size: 0.8rem;
       font-weight: 750;
       margin-bottom: 13px;
@@ -689,13 +734,14 @@
 
     .faculty-info ul {
       padding-left: 17px;
-      color: #64748b;
+      color: var(--muted);
       font-size: 0.83rem;
     }
 
     .faculty-info li {
       margin-bottom: 5px;
     }
+
 
     /* =========================
        FINAL CTA
@@ -704,21 +750,11 @@
     .cta {
       position: relative;
       overflow: hidden;
-      background: #123c69;
+      background: var(--navy);
       color: white;
       text-align: center;
       padding: 85px 0;
-    }
-
-    .cta::before {
-      content: "";
-      position: absolute;
-      width: 260px;
-      height: 260px;
-      border: 45px solid rgba(255,255,255,0.04);
-      border-radius: 50%;
-      left: -100px;
-      top: -100px;
+      border-top: 5px solid var(--gold);
     }
 
     .cta-content {
@@ -748,21 +784,27 @@
     }
 
     .cta .button-primary {
-      background: #0f766e;
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    .cta .button-primary:hover {
+      background: white;
     }
 
     .cta .button-outline {
       background: white;
-      color: #123c69;
+      color: var(--navy);
       border: none;
     }
+
 
     /* =========================
        FOOTER
     ========================= */
 
     footer {
-      background: #0b223b;
+      background: #091d35;
       color: #94a3b8;
       padding: 35px 0;
     }
@@ -776,11 +818,15 @@
 
     .footer-brand strong {
       color: white;
-      font-size: 0.98rem;
+      font-size: 1rem;
+    }
+
+    .footer-brand .global-gateway {
+      color: var(--gold);
     }
 
     .footer-brand p {
-      font-size: 0.75rem;
+      font-size: 0.78rem;
       margin-top: 4px;
     }
 
@@ -792,7 +838,7 @@
     }
 
     .footer-links a:hover {
-      color: white;
+      color: var(--gold);
     }
 
     .copyright {
@@ -802,6 +848,7 @@
       padding-top: 22px;
       font-size: 0.73rem;
     }
+
 
     /* =========================
        MOBILE
@@ -815,15 +862,6 @@
 
       .trust-grid {
         grid-template-columns: repeat(2, 1fr);
-      }
-
-      .trust-item:nth-child(2) {
-        border-right: none;
-      }
-
-      .trust-item:nth-child(3),
-      .trust-item:nth-child(4) {
-        border-top: 1px solid #e2e8f0;
       }
 
       .about-grid {
@@ -853,6 +891,23 @@
         padding: 65px 0;
       }
 
+      .nav-inner {
+        min-height: 76px;
+      }
+
+      .brand-mark {
+        width: 46px;
+        height: 46px;
+      }
+
+      .brand-name {
+        font-size: 1.05rem;
+      }
+
+      .brand-tagline {
+        font-size: 0.7rem;
+      }
+
       .hero {
         padding: 75px 0 65px;
       }
@@ -861,16 +916,12 @@
         font-size: 2.65rem;
       }
 
-      .hero-subtitle {
-        font-size: 1.15rem;
+      .hero-badge {
+        font-size: 0.82rem;
       }
 
       .hero-description {
         font-size: 0.96rem;
-      }
-
-      .section-header {
-        margin-bottom: 38px;
       }
 
       .section-header h2 {
@@ -881,7 +932,8 @@
       .service-grid,
       .review-grid,
       .session-grid,
-      .results-grid {
+      .results-grid,
+      .trust-grid {
         grid-template-columns: 1fr;
       }
 
@@ -889,29 +941,8 @@
         flex-direction: column;
       }
 
-      .faculty-avatar {
-        width: 58px;
-        height: 58px;
-      }
-
-      .about-highlight {
-        padding: 30px;
-      }
-
-      .cta {
-        padding: 65px 0;
-      }
-
       .cta h2 {
         font-size: 1.9rem;
-      }
-
-      .brand-name {
-        font-size: 0.9rem;
-      }
-
-      .brand-tagline {
-        font-size: 0.58rem;
       }
     }
 
@@ -922,9 +953,7 @@
 <body>
 
 
-<!-- =========================
-     NAVIGATION
-========================= -->
+<!-- NAVIGATION -->
 
 <nav class="navbar">
 
@@ -937,13 +966,15 @@
       </div>
 
       <div>
+
         <div class="brand-name">
-          Gateway Educational Services
+          <span class="global-gateway">Global Gateway</span> Academics
         </div>
 
         <span class="brand-tagline">
           Building Bright Futures, Beyond Borders
         </span>
+
       </div>
 
     </a>
@@ -952,13 +983,9 @@
     <div class="nav-links">
 
       <a href="#about">About</a>
-
       <a href="#why-us">Why Us</a>
-
       <a href="#services">Services</a>
-
       <a href="#results">Results</a>
-
       <a href="#faculty">Faculty</a>
 
       <a href="#contact" class="nav-cta">
@@ -975,9 +1002,7 @@
 <main id="top">
 
 
-<!-- =========================
-     HERO
-========================= -->
+<!-- HERO -->
 
 <header class="hero">
 
@@ -1000,10 +1025,10 @@
 
       Are you planning your child's path to a bright future, but not sure
       where to start? From <strong>AI, STEM, Robotics & Coding</strong> for
-      young learners to <strong>O/A Levels, NUST Entry Test preparation,
+      young learners to <strong>O/A Levels, University Entrance Exam Preparation,
       and admissions abroad</strong>, we guide your child every step of the
-      way — taught by <strong>NUST professors, PhD holders, and academic
-      toppers with 10+ years of experience.</strong>
+      way — taught by <strong>NUST University professors, PhD holders, and
+      academic toppers with 10+ years of experience.</strong>
 
       Personalized one-on-one sessions or focused small groups, tailored
       to your child's pace.
@@ -1027,11 +1052,9 @@
 </header>
 
 
-<!-- =========================
-     TRUST STRIP
-========================= -->
+<!-- KEY HIGHLIGHTS -->
 
-<div class="trust-strip">
+<section class="trust-strip">
 
   <div class="container trust-grid">
 
@@ -1041,28 +1064,28 @@
     </div>
 
     <div class="trust-item">
-      <div class="trust-number">NUST</div>
-      <div class="trust-label">University-Level Faculty</div>
+      <div class="trust-number">NUST University Professors</div>
+      <div class="trust-label">Teaching Faculty</div>
     </div>
 
     <div class="trust-item">
-      <div class="trust-number">4 Students</div>
-      <div class="trust-label">Maximum Group Size</div>
+      <div class="trust-number">PhD Faculty</div>
+      <div class="trust-label">Highly Qualified Educators</div>
     </div>
 
     <div class="trust-item">
-      <div class="trust-number">Global</div>
-      <div class="trust-label">University Admissions</div>
+      <div class="trust-number">20+</div>
+      <div class="trust-label">
+        International Scholarship Admissions Secured
+      </div>
     </div>
 
   </div>
 
-</div>
+</section>
 
 
-<!-- =========================
-     ABOUT US
-========================= -->
+<!-- ABOUT -->
 
 <section id="about" class="section about">
 
@@ -1088,20 +1111,24 @@
       <div class="section-header" style="text-align:left; margin:0 0 20px 0;">
 
         <div class="eyebrow">
-          About Gateway
+          About <span class="brand-gold">Global Gateway</span>
         </div>
 
         <h2>
-          More Than Tutoring. A Gateway to Opportunity.
+          More Than Tutoring. A
+          <span class="brand-gold">Global Gateway</span>
+          to Endless Global Opportunities.
         </h2>
 
       </div>
 
       <p>
-        <strong>Gateway Educational Services</strong> is an educational
-        platform dedicated to helping students achieve academic excellence
-        while developing the knowledge and skills needed for an increasingly
-        competitive world.
+        <strong>
+          <span class="brand-gold">Global Gateway</span> Academics
+        </strong>
+        is an educational platform dedicated to helping students achieve
+        academic excellence while developing the knowledge and skills needed
+        for an increasingly competitive world.
       </p>
 
       <p>
@@ -1123,9 +1150,7 @@
 </section>
 
 
-<!-- =========================
-     WHY PARENTS CHOOSE US
-========================= -->
+<!-- WHY PARENTS CHOOSE US -->
 
 <section id="why-us" class="section why-us">
 
@@ -1134,7 +1159,7 @@
     <div class="section-header">
 
       <div class="eyebrow">
-        Why Gateway
+        Why <span class="brand-gold">Global Gateway</span>
       </div>
 
       <h2>
@@ -1156,29 +1181,25 @@
 
         <div class="feature-icon">🎓</div>
 
-        <h3>
-          Highly Qualified Faculty
-        </h3>
+        <h3>Highly Qualified Faculty</h3>
 
         <p>
-          Learn from NUST professors, PhD holders, top university graduates
-          and experienced educators.
+          Learn from NUST University professors, PhD holders, top
+          university graduates and experienced educators.
         </p>
 
       </div>
 
 
-      <div class="feature-card">
+      <div class="feature-card alt">
 
         <div class="feature-icon">★</div>
 
-        <h3>
-          10+ Years of Experience
-        </h3>
+        <h3>10+ Years of Experience</h3>
 
         <p>
-          Our instructors bring extensive teaching, mentoring and academic
-          experience.
+          Our instructors bring extensive teaching, mentoring and
+          academic experience.
         </p>
 
       </div>
@@ -1188,9 +1209,7 @@
 
         <div class="feature-icon">🏆</div>
 
-        <h3>
-          Proven Academic Results
-        </h3>
+        <h3>Proven Academic Results</h3>
 
         <p>
           Students have achieved outstanding O/A Level results and
@@ -1200,17 +1219,15 @@
       </div>
 
 
-      <div class="feature-card">
+      <div class="feature-card alt">
 
         <div class="feature-icon">◉</div>
 
-        <h3>
-          Personalized Learning
-        </h3>
+        <h3>Personalized Learning</h3>
 
         <p>
-          Lessons can be tailored to the student's level, pace, strengths
-          and academic goals.
+          Lessons can be tailored to the student's level, pace,
+          strengths and academic goals.
         </p>
 
       </div>
@@ -1220,9 +1237,7 @@
 
         <div class="feature-icon">👥</div>
 
-        <h3>
-          Focused Small Groups
-        </h3>
+        <h3>Focused Small Groups</h3>
 
         <p>
           Small-group packages are limited to a maximum of four students.
@@ -1231,20 +1246,19 @@
       </div>
 
 
-      <div class="feature-card">
+      <div class="feature-card alt">
 
         <div class="feature-icon">🤖</div>
 
-        <h3>
-          Future-Ready Skills
-        </h3>
+        <h3>Future-Ready Skills</h3>
 
         <p>
-          Students can explore AI, STEM, Robotics, Coding, Python and
-          Data Analytics.
+          Students can explore AI, STEM, Robotics, Coding,
+          Python and Data Analytics.
         </p>
 
       </div>
+
 
     </div>
 
@@ -1253,9 +1267,7 @@
 </section>
 
 
-<!-- =========================
-     SESSION FORMATS
-========================= -->
+<!-- SESSION FORMATS -->
 
 <section class="section sessions">
 
@@ -1318,9 +1330,7 @@
 </section>
 
 
-<!-- =========================
-     SERVICES
-========================= -->
+<!-- SERVICES -->
 
 <section id="services" class="section services">
 
@@ -1347,17 +1357,11 @@
     <div class="service-grid">
 
 
-      <!-- SERVICE 1 -->
-
       <div class="service-card">
 
-        <div class="service-number">
-          01
-        </div>
+        <div class="service-number">01</div>
 
-        <h3>
-          O/A Levels Tutoring
-        </h3>
+        <h3>O/A Levels Tutoring</h3>
 
         <p>
           Build strong conceptual foundations and prepare effectively
@@ -1365,28 +1369,22 @@
         </p>
 
         <div class="service-tags">
-
           <span class="service-tag">Mathematics</span>
           <span class="service-tag">Physics</span>
           <span class="service-tag">Chemistry</span>
           <span class="service-tag">Biology</span>
           <span class="service-tag">Computer Science</span>
-
         </div>
 
       </div>
 
 
-      <!-- SERVICE 2 -->
-
       <div class="service-card">
 
-        <div class="service-number">
-          02
-        </div>
+        <div class="service-number">02</div>
 
         <h3>
-          NUST Entry Test Preparation
+          University Entrance Exam Preparation
         </h3>
 
         <p>
@@ -1395,23 +1393,17 @@
         </p>
 
         <div class="service-tags">
-
           <span class="service-tag">Concept Building</span>
           <span class="service-tag">Practice</span>
           <span class="service-tag">Test Strategy</span>
-
         </div>
 
       </div>
 
 
-      <!-- SERVICE 3 -->
-
       <div class="service-card">
 
-        <div class="service-number">
-          03
-        </div>
+        <div class="service-number">03</div>
 
         <h3>
           Global University Admissions
@@ -1423,23 +1415,17 @@
         </p>
 
         <div class="service-tags">
-
           <span class="service-tag">University Selection</span>
           <span class="service-tag">Applications</span>
           <span class="service-tag">Scholarships</span>
-
         </div>
 
       </div>
 
 
-      <!-- SERVICE 4 -->
-
       <div class="service-card">
 
-        <div class="service-number">
-          04
-        </div>
+        <div class="service-number">04</div>
 
         <h3>
           AI / STEM / Robotics / Coding
@@ -1452,24 +1438,18 @@
         </p>
 
         <div class="service-tags">
-
           <span class="service-tag">AI</span>
           <span class="service-tag">STEM</span>
           <span class="service-tag">Robotics</span>
           <span class="service-tag">Coding</span>
-
         </div>
 
       </div>
 
 
-      <!-- SERVICE 5 -->
-
       <div class="service-card">
 
-        <div class="service-number">
-          05
-        </div>
+        <div class="service-number">05</div>
 
         <h3>
           Programming, Python & Data Analytics
@@ -1481,23 +1461,17 @@
         </p>
 
         <div class="service-tags">
-
           <span class="service-tag">Programming</span>
           <span class="service-tag">Python</span>
           <span class="service-tag">Data Analytics</span>
-
         </div>
 
       </div>
 
 
-      <!-- SERVICE 6 -->
-
       <div class="service-card">
 
-        <div class="service-number">
-          06
-        </div>
+        <div class="service-number">06</div>
 
         <h3>
           Academic Guidance & Mentoring
@@ -1509,10 +1483,8 @@
         </p>
 
         <div class="service-tags">
-
           <span class="service-tag">Mentoring</span>
           <span class="service-tag">Academic Planning</span>
-
         </div>
 
       </div>
@@ -1525,9 +1497,7 @@
 </section>
 
 
-<!-- =========================
-     STUDENT RESULTS
-========================= -->
+<!-- RESULTS -->
 
 <section id="results" class="section results">
 
@@ -1556,9 +1526,7 @@
 
       <div class="result-card">
 
-        <h3>
-          Muhammad Raahim
-        </h3>
+        <h3>Muhammad Raahim</h3>
 
         <div class="achievement-grid">
 
@@ -1586,9 +1554,7 @@
 
       <div class="result-card">
 
-        <h3>
-          Muhammad Sarim
-        </h3>
+        <h3>Muhammad Sarim</h3>
 
         <div class="achievement-grid">
 
@@ -1617,9 +1583,7 @@
 </section>
 
 
-<!-- =========================
-     STUDENT REVIEWS
-========================= -->
+<!-- STUDENT REVIEWS -->
 
 <section class="section reviews">
 
@@ -1648,9 +1612,7 @@
 
       <div class="review-card">
 
-        <div class="quote-mark">
-          “
-        </div>
+        <div class="quote-mark">“</div>
 
         <p>
           The guidance I received wasn't just about scoring well — it was
@@ -1672,9 +1634,7 @@
 
       <div class="review-card">
 
-        <div class="quote-mark">
-          “
-        </div>
+        <div class="quote-mark">“</div>
 
         <p>
           What made the difference for me was having instructors who didn't
@@ -1695,9 +1655,7 @@
 
       <div class="review-card">
 
-        <div class="quote-mark">
-          “
-        </div>
+        <div class="quote-mark">“</div>
 
         <p>
           The teaching helped me understand concepts instead of simply
@@ -1717,7 +1675,6 @@
 
     </div>
 
-
     <div class="placeholder-note">
       Sample testimonials should be replaced with verified student reviews
       before publication.
@@ -1728,9 +1685,7 @@
 </section>
 
 
-<!-- =========================
-     PARENT REVIEWS
-========================= -->
+<!-- PARENT REVIEWS -->
 
 <section class="section">
 
@@ -1759,9 +1714,7 @@
 
       <div class="review-card">
 
-        <div class="quote-mark">
-          “
-        </div>
+        <div class="quote-mark">“</div>
 
         <p>
           The teachers are knowledgeable, supportive and genuinely invested
@@ -1781,9 +1734,7 @@
 
       <div class="review-card">
 
-        <div class="quote-mark">
-          “
-        </div>
+        <div class="quote-mark">“</div>
 
         <p>
           We appreciated the individual attention and clear guidance
@@ -1803,9 +1754,7 @@
 
       <div class="review-card">
 
-        <div class="quote-mark">
-          “
-        </div>
+        <div class="quote-mark">“</div>
 
         <p>
           The combination of academic support and future-focused skills
@@ -1830,9 +1779,7 @@
 </section>
 
 
-<!-- =========================
-     FACULTY
-========================= -->
+<!-- FACULTY -->
 
 <section id="faculty" class="section faculty">
 
@@ -1859,42 +1806,23 @@
     <div class="faculty-grid">
 
 
-      <!-- AHSAN -->
-
       <div class="faculty-card">
 
-        <div class="faculty-avatar">
-          AS
-        </div>
+        <div class="faculty-avatar">AS</div>
 
         <div class="faculty-info">
 
-          <h3>
-            Dr. Ahsan Shahzad
-          </h3>
+          <h3>Dr. Ahsan Shahzad</h3>
 
           <div class="faculty-role">
-            Assistant Professor at NUST
+            Assistant Professor at NUST University
           </div>
 
           <ul>
-
-            <li>
-              PhD in EECS, GIST, South Korea
-            </li>
-
-            <li>
-              Best Thesis Award recipient
-            </li>
-
-            <li>
-              Academic topper and scholarship holder
-            </li>
-
-            <li>
-              Graduate of UET Lahore with Honors
-            </li>
-
+            <li>PhD in EECS, GIST, South Korea</li>
+            <li>Best Thesis Award recipient</li>
+            <li>Academic topper and scholarship holder</li>
+            <li>Graduate of UET Lahore with Honors</li>
           </ul>
 
         </div>
@@ -1902,39 +1830,29 @@
       </div>
 
 
-      <!-- YASIN -->
-
       <div class="faculty-card">
 
-        <div class="faculty-avatar">
-          MY
-        </div>
+        <div class="faculty-avatar">MY</div>
 
         <div class="faculty-info">
 
-          <h3>
-            Dr. Muhammad Yasin
-          </h3>
+          <h3>Dr. Muhammad Yasin</h3>
 
           <div class="faculty-role">
-            Assistant Professor at NUST
+            Assistant Professor at NUST University
           </div>
 
           <ul>
-
             <li>
               PhD in Electrical & Electronics Engineering,
               New York University
             </li>
-
             <li>
               MS, Masdar Institute of Science & Technology
             </li>
-
             <li>
               BS Electrical Engineering, UET Lahore
             </li>
-
           </ul>
 
         </div>
@@ -1942,38 +1860,22 @@
       </div>
 
 
-      <!-- MARIAM -->
-
       <div class="faculty-card">
 
-        <div class="faculty-avatar">
-          MB
-        </div>
+        <div class="faculty-avatar">MB</div>
 
         <div class="faculty-info">
 
-          <h3>
-            Mariam Bashir
-          </h3>
+          <h3>Mariam Bashir</h3>
 
           <div class="faculty-role">
             Electrical Engineering & Data Analytics Educator
           </div>
 
           <ul>
-
-            <li>
-              MS Electrical Engineering, COMSATS Lahore
-            </li>
-
-            <li>
-              BS Electrical Engineering, UET Lahore
-            </li>
-
-            <li>
-              NUST Entry Test Topper, 2006
-            </li>
-
+            <li>MS Electrical Engineering, COMSATS Lahore</li>
+            <li>BS Electrical Engineering, UET Lahore</li>
+            <li>NUST Entry Test Topper, 2006</li>
           </ul>
 
         </div>
@@ -1981,38 +1883,22 @@
       </div>
 
 
-      <!-- AFEERA -->
-
       <div class="faculty-card">
 
-        <div class="faculty-avatar">
-          AK
-        </div>
+        <div class="faculty-avatar">AK</div>
 
         <div class="faculty-info">
 
-          <h3>
-            Afeera Khan
-          </h3>
+          <h3>Afeera Khan</h3>
 
           <div class="faculty-role">
             Lecturer, FG Postgraduate College
           </div>
 
           <ul>
-
-            <li>
-              MSc Computer Science, University of Wah
-            </li>
-
-            <li>
-              Lecturer at FG Postgraduate College
-            </li>
-
-            <li>
-              Computer Science & Programming Education
-            </li>
-
+            <li>MSc Computer Science, University of Wah</li>
+            <li>Lecturer at FG Postgraduate College</li>
+            <li>Computer Science & Programming Education</li>
           </ul>
 
         </div>
@@ -2027,16 +1913,16 @@
 </section>
 
 
-<!-- =========================
-     FINAL CTA
-========================= -->
+<!-- FINAL CTA -->
 
 <section id="contact" class="cta">
 
   <div class="container cta-content">
 
     <h2>
-      Ready to Give Your Child the Right Gateway?
+      Ready to Open a
+      <span class="brand-gold">Global Gateway</span>
+      for Your Child?
     </h2>
 
     <p>
@@ -2048,18 +1934,12 @@
 
     <div class="cta-buttons">
 
-
-      <!-- EMAIL -->
-
       <a
-        href="mailto:engr.mariam.bashir@gmail.com?subject=Free Consultation - Gateway Educational Services"
+        href="mailto:engr.mariam.bashir@gmail.com?subject=Free Consultation - Global Gateway Academics"
         class="button button-primary"
       >
         ✉ Book a Free Consultation
       </a>
-
-
-      <!-- PHONE -->
 
       <a
         href="tel:+30199878731"
@@ -2067,9 +1947,6 @@
       >
         📞 Call Us
       </a>
-
-
-      <!-- WHATSAPP -->
 
       <a
         href="https://wa.me/30199878731"
@@ -2079,7 +1956,6 @@
       >
         💬 WhatsApp
       </a>
-
 
     </div>
 
@@ -2091,9 +1967,7 @@
 </main>
 
 
-<!-- =========================
-     FOOTER
-========================= -->
+<!-- FOOTER -->
 
 <footer>
 
@@ -2104,7 +1978,7 @@
       <div class="footer-brand">
 
         <strong>
-          Gateway Educational Services
+          <span class="global-gateway">Global Gateway</span> Academics
         </strong>
 
         <p>
@@ -2117,15 +1991,10 @@
       <div class="footer-links">
 
         <a href="#about">About</a>
-
         <a href="#why-us">Why Us</a>
-
         <a href="#services">Services</a>
-
         <a href="#results">Results</a>
-
         <a href="#faculty">Faculty</a>
-
         <a href="#contact">Contact</a>
 
       </div>
@@ -2134,9 +2003,7 @@
 
 
     <div class="copyright">
-
-      © 2026 Gateway Educational Services. All rights reserved.
-
+      © 2026 Global Gateway Academics. All rights reserved.
     </div>
 
   </div>
