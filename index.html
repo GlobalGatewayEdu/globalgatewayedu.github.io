@@ -114,6 +114,30 @@
     }
 
 
+
+    .header-brand-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      line-height: 1.15;
+      margin-left: 18px;
+      white-space: nowrap;
+    }
+
+    .header-brand-name {
+      color: var(--navy);
+      font-size: 1.55rem;
+      font-weight: 900;
+      letter-spacing: -0.3px;
+    }
+
+    .header-brand-tagline {
+      color: var(--muted);
+      font-size: 0.93rem;
+      font-weight: 650;
+      margin-top: 6px;
+    }
+
     .brand-logo-link {
       display: flex;
       align-items: center;
@@ -862,8 +886,23 @@
         min-height: 1280px;
       }
 
+
+      .header-brand-text {
+        margin-left: 10px;
+        white-space: normal;
+      }
+
+      .header-brand-name {
+        font-size: 1.05rem;
+      }
+
+      .header-brand-tagline {
+        font-size: 0.68rem;
+        margin-top: 3px;
+      }
+
       .site-logo {
-        width: 105px;
+        width: 88px;
       }
     }
 
@@ -1087,7 +1126,11 @@
 <nav class="navbar">
   <div class="container nav-inner">
     <a href="#top" class="brand brand-logo-link" aria-label="Global Gateway Academics home">
-      <img src="logo.png" alt="Global Gateway Academics — Building Bright Futures, Beyond Borders" class="site-logo">
+      <img src="logo.png" alt="Global Gateway Academics logo" class="site-logo">
+      <div class="header-brand-text">
+        <div class="header-brand-name"><span class="brand-gold">Global Gateway</span> Academics</div>
+        <div class="header-brand-tagline">Building Bright Futures, Beyond Borders</div>
+      </div>
     </a>
 
     <div class="nav-links">
