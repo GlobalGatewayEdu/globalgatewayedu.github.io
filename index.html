@@ -834,130 +834,40 @@
     .faculty-info li {
       margin-bottom: 6px;
     }
-
-
     /* EMBEDDED DEMO FORM */
     .demo-form-section {
       background: white;
     }
 
-    .demo-form-wrap {
+    .google-form-shell {
       max-width: 980px;
       margin: 0 auto;
-      background: #f8fafc;
+      background: #ffffff;
       border: 1px solid var(--border);
       border-radius: 18px;
-      padding: 42px;
-      box-shadow: 0 12px 30px rgba(15,45,84,0.06);
+      overflow: hidden;
+      box-shadow: 0 12px 30px rgba(15,45,84,0.08);
     }
 
-    .demo-form-grid {
-      display: grid;
-      gap: 30px;
-    }
-
-    .form-question h3,
-    .form-field label {
-      color: var(--navy);
-      font-size: 1.08rem;
-      font-weight: 850;
-      margin-bottom: 13px;
+    .google-form-shell iframe {
       display: block;
-    }
-
-    .choice-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px 28px;
-    }
-
-    .choice {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 1rem;
-      color: #475569;
-      cursor: pointer;
-    }
-
-    .choice input {
-      width: 18px;
-      height: 18px;
-      accent-color: var(--navy);
-    }
-
-    .contact-fields {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 22px;
-    }
-
-    .form-field input {
       width: 100%;
-      padding: 13px 14px;
-      border: 1px solid #cbd5e1;
-      border-radius: 8px;
-      font: inherit;
-      background: white;
-      color: var(--text);
-      outline: none;
-    }
-
-    .form-field input:focus {
-      border-color: var(--gold);
-      box-shadow: 0 0 0 3px rgba(212,160,23,0.12);
-    }
-
-    .consent-box {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      color: #475569;
-      font-size: 0.9rem;
-      line-height: 1.5;
-    }
-
-    .consent-box input {
-      margin-top: 4px;
-      width: 17px;
-      height: 17px;
-      accent-color: var(--navy);
-    }
-
-    .form-submit-row {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-
-    .form-status {
-      font-size: 0.92rem;
-      font-weight: 700;
-    }
-
-    .form-status.success {
-      color: var(--teal);
-    }
-
-    .form-status.error {
-      color: #b91c1c;
+      min-height: 1120px;
+      border: 0;
+      background: #ffffff;
     }
 
     @media (max-width: 700px) {
-      .demo-form-wrap {
-        padding: 26px 20px;
+      .google-form-shell iframe {
+        min-height: 1280px;
       }
 
-      .contact-fields {
-        grid-template-columns: 1fr;
-      }
-
-      .choice-row {
-        flex-direction: column;
-        gap: 10px;
+      .site-logo {
+        width: 105px;
       }
     }
+
+
 
     /* CTA */
     .cta {
@@ -1088,10 +998,6 @@
 
       .nav-inner {
         min-height: 76px;
-      }
-
-      .site-logo {
-        width: 105px;
       }
 
       .brand-mark {
@@ -1698,75 +1604,26 @@
 </section>
 
 
+
 <section id="demo-form" class="section demo-form-section">
   <div class="container">
     <div class="section-header">
       <div class="eyebrow">Book a Demo</div>
       <h2>Tell Us What You Need</h2>
-      <p>Share a few details and our team will contact you with the right learning option.</p>
+      <p>Complete the short form below and our team will contact you with the right learning option.</p>
     </div>
 
-    <div class="demo-form-wrap">
-      <form id="demoBookingForm" class="demo-form-grid">
-        <div class="form-question">
-          <h3>Who needs a tutor?</h3>
-          <div class="choice-row">
-            <label class="choice"><input type="radio" name="whoNeedsTutor" value="Myself" required> Myself</label>
-            <label class="choice"><input type="radio" name="whoNeedsTutor" value="My child"> My child</label>
-            <label class="choice"><input type="radio" name="whoNeedsTutor" value="Someone else"> Someone else</label>
-          </div>
-        </div>
-
-        <div class="form-question">
-          <h3>Grade Level</h3>
-          <div class="choice-row">
-            <label class="choice"><input type="radio" name="gradeLevel" value="Grade 4-7" required> Grade 4–7</label>
-            <label class="choice"><input type="radio" name="gradeLevel" value="O Levels"> O Levels</label>
-            <label class="choice"><input type="radio" name="gradeLevel" value="A Levels"> A Levels</label>
-            <label class="choice"><input type="radio" name="gradeLevel" value="University Entrance Examination"> University Entrance Examination</label>
-            <label class="choice"><input type="radio" name="gradeLevel" value="University Admission Guidance"> University Admission Guidance</label>
-          </div>
-        </div>
-
-        <div class="form-question">
-          <h3>How soon do you need tutoring?</h3>
-          <div class="choice-row">
-            <label class="choice"><input type="radio" name="timeline" value="Right away" required> Right away</label>
-            <label class="choice"><input type="radio" name="timeline" value="In a few weeks"> In a few weeks</label>
-            <label class="choice"><input type="radio" name="timeline" value="Not sure"> Not sure</label>
-          </div>
-        </div>
-
-        <div class="contact-fields">
-          <div class="form-field">
-            <label for="clientName">Name</label>
-            <input id="clientName" name="name" type="text" placeholder="Your name" required>
-          </div>
-
-          <div class="form-field">
-            <label for="clientEmail">Email</label>
-            <input id="clientEmail" name="email" type="email" placeholder="Your email" required>
-          </div>
-
-          <div class="form-field">
-            <label for="clientPhone">Phone Number</label>
-            <input id="clientPhone" name="phone" type="tel" placeholder="+966 / +92 ..." required>
-          </div>
-        </div>
-
-        <label class="consent-box">
-          <input type="checkbox" name="consent" value="Yes" required>
-          <span>
-            I agree to be contacted by <strong>Global Gateway Academics</strong>
-            by phone, WhatsApp or email regarding my inquiry.
-          </span>
-        </label>
-
-        <div class="form-submit-row">
-          <button type="submit" class="button button-primary">Submit</button>
-          <span id="formStatus" class="form-status" aria-live="polite"></span>
-        </div>
-      </form>
+    <div class="google-form-shell">
+      <iframe
+        src="https://forms.gle/KR7DVmGhAZaZUaEQ6"
+        title="Global Gateway Academics Demo Booking Form"
+        loading="lazy"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        allowfullscreen>
+        Loading…
+      </iframe>
     </div>
   </div>
 </section>
@@ -1828,62 +1685,6 @@
   </div>
 </footer>
 
-<script>
-  /*
-    GOOGLE SHEETS CONNECTION
-    ------------------------
-    This form stays on your website.
-
-    To save submissions automatically into Google Sheets:
-    1. Create a Google Sheet under engr.mariam.bashir@gmail.com.
-    2. Open Extensions > Apps Script.
-    3. Paste the Google Apps Script code provided separately.
-    4. Deploy it as a Web App.
-    5. Paste the Web App URL below.
-  */
-
-  const GOOGLE_APPS_SCRIPT_URL = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
-
-  const form = document.getElementById("demoBookingForm");
-  const statusEl = document.getElementById("formStatus");
-
-  form.addEventListener("submit", async function(event) {
-    event.preventDefault();
-
-    if (
-      !GOOGLE_APPS_SCRIPT_URL ||
-      GOOGLE_APPS_SCRIPT_URL.includes("PASTE_YOUR_GOOGLE_APPS_SCRIPT")
-    ) {
-      statusEl.textContent = "Form connection is not set up yet.";
-      statusEl.className = "form-status error";
-      return;
-    }
-
-    statusEl.textContent = "Submitting...";
-    statusEl.className = "form-status";
-
-    const formData = new FormData(form);
-    const payload = Object.fromEntries(formData.entries());
-
-    try {
-      await fetch(GOOGLE_APPS_SCRIPT_URL, {
-        method: "POST",
-        mode: "no-cors",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(payload)
-      });
-
-      form.reset();
-      statusEl.textContent = "Thank you! Your request has been submitted.";
-      statusEl.className = "form-status success";
-    } catch (error) {
-      statusEl.textContent = "Something went wrong. Please try again or contact us on WhatsApp.";
-      statusEl.className = "form-status error";
-    }
-  });
-</script>
 
 </body>
 </html>
