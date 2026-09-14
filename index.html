@@ -319,7 +319,7 @@
 
     /* KEY HIGHLIGHTS */
     .trust-strip {
-      background: var(--navy);
+      background: var(--teal);
       padding: 36px 0;
     }
 
@@ -332,8 +332,8 @@
     .trust-item {
       text-align: center;
       padding: 29px 18px;
-      background: rgba(255,255,255,0.075);
-      border: 1px solid rgba(255,255,255,0.16);
+      background: var(--navy);
+      border: 1px solid rgba(255,255,255,0.18);
       border-top: 4px solid var(--gold);
       border-radius: 13px;
       transition: transform 0.25s ease, background 0.25s ease;
@@ -341,7 +341,7 @@
 
     .trust-item:hover {
       transform: translateY(-4px);
-      background: rgba(255,255,255,0.12);
+      background: #163b69;
     }
 
     .trust-number {
@@ -1118,7 +1118,29 @@
         text-align: center;
       }
     }
-  </style>
+  
+    /* Inventor revision: glowing Early Bird banner */
+    .early-bird-banner {
+      position: relative; overflow: hidden;
+      box-shadow: 0 0 22px rgba(212,160,23,.34), 0 14px 34px rgba(15,45,84,.18);
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+    .early-bird-banner:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 36px rgba(212,160,23,.5), 0 18px 42px rgba(15,45,84,.22);
+    }
+    .early-bird-banner::after {
+      content: ""; position:absolute; inset:-60%; pointer-events:none;
+      background: linear-gradient(110deg, transparent 44%, rgba(255,255,255,.15) 50%, transparent 56%);
+      animation: bannerShine 4.5s ease-in-out infinite;
+    }
+    @keyframes bannerShine { 0%,55% {transform:translateX(-45%)} 85%,100% {transform:translateX(45%)} }
+    .early-bird-megaphone { font-size: 1.8rem; margin-bottom: 7px; filter: drop-shadow(0 0 8px rgba(212,160,23,.5)); }
+
+
+/* Final Early Bird banner: glowing/dimming gold border */
+.early-bird-promo-section{background:#eef8fb}.early-bird-image-wrap{max-width:1500px;margin:0 auto;border-radius:24px;overflow:hidden;line-height:0;border:2px solid #e0a800;box-shadow:0 0 12px rgba(224,168,0,.45),0 0 30px rgba(224,168,0,.22);animation:bannerGlow 2.8s ease-in-out infinite;transition:transform .25s ease,box-shadow .25s ease}.early-bird-image-wrap:hover{transform:translateY(-2px) scale(1.003);box-shadow:0 0 20px rgba(224,168,0,.72),0 0 45px rgba(224,168,0,.35)}.early-bird-banner-image{width:100%;height:auto;display:block}@keyframes bannerGlow{0%,100%{box-shadow:0 0 8px rgba(224,168,0,.28),0 0 18px rgba(224,168,0,.12)}50%{box-shadow:0 0 22px rgba(224,168,0,.75),0 0 48px rgba(224,168,0,.34)}}@media(prefers-reduced-motion:reduce){.early-bird-image-wrap{animation:none}}
+</style>
 </head>
 
 <body>
@@ -1281,7 +1303,7 @@
       <div class="feature-card">
         <div class="feature-icon">👥</div>
         <h3>Focused Small Groups</h3>
-        <p>Small-group packages are limited to a maximum of four students.</p>
+        <p>Focused and interactive learning in small study groups, encouraging participation, collaboration and personalized attention.</p>
       </div>
 
       <div class="feature-card alt">
@@ -1313,178 +1335,17 @@
       <div class="session-card">
         <h3>Small Group Packages</h3>
         <p>
-          Focused and interactive learning in groups of <strong>maximum 4 students</strong>,
-          combining personalized attention with collaborative learning.
+          Focused and interactive learning in small study groups, combining personalized attention with collaborative learning.
         </p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="services" class="section services">
+<section class="section early-bird-promo-section" aria-label="Early Bird Discount">
   <div class="container">
-    <div class="section-header">
-      <div class="eyebrow">What We Offer</div>
-      <h2>Our Educational Services</h2>
-      <p>From academic excellence to future-ready skills and global opportunities.</p>
-    </div>
-
-    <div class="early-bird-banner">
-      <div class="early-bird-badge">Early Bird • Limited Time</div>
-      <h3>Start Early. Save More.</h3>
-      <p><strong>Early Bird Discount — Enroll by 15 October</strong> and unlock special introductory pricing.</p>
-    </div>
-
-    <div class="service-grid">
-      <div class="service-card alt">
-        <div class="service-number">01</div>
-        <h3>O/A Levels Tutoring</h3>
-        <p>
-          Build strong conceptual foundations and prepare effectively for school and board examinations.
-        </p>
-
-        <div class="service-tags">
-          <span class="service-tag">Mathematics</span>
-          <span class="service-tag">Physics</span>
-          <span class="service-tag">Chemistry</span>
-          <span class="service-tag">Biology</span>
-          <span class="service-tag">Computer Science</span>
-        </div>
-
-        <div class="price-block">
-          <div class="price-label">Early Bird Price</div>
-          <div class="price-row">
-            <span class="old-price">60 SAR/hour</span>
-            <span class="new-price"><span>40 SAR</span>/hour</span>
-          </div>
-          <div class="price-note">Offer valid until 15 October.</div>
-        </div>
-      </div>
-
-      <div class="service-card">
-        <div class="service-number">02</div>
-        <h3>University Entrance Examination Preparation</h3>
-        <p>
-          Structured preparation for major university entrance examinations with focused academic support.
-        </p>
-
-        <div class="service-tags">
-          <span class="service-tag">NAT</span>
-          <span class="service-tag">GAT</span>
-          <span class="service-tag">ECAT</span>
-          <span class="service-tag">NET</span>
-          <span class="service-tag">GET</span>
-          <span class="service-tag">SAT</span>
-        </div>
-
-        <div class="price-block">
-          <div class="price-label">Early Bird Price</div>
-          <div class="price-row">
-            <span class="old-price">60 SAR/hour</span>
-            <span class="new-price"><span>40 SAR</span>/hour</span>
-          </div>
-          <div class="price-note">Offer valid until 15 October.</div>
-        </div>
-      </div>
-
-      <div class="service-card alt">
-        <div class="service-number">03</div>
-        <h3>Global University Admissions</h3>
-        <p>
-          Guidance for university selection, applications, scholarships and planning for higher education abroad.
-        </p>
-
-        <div class="service-tags">
-          <span class="service-tag">University Selection</span>
-          <span class="service-tag">Applications</span>
-          <span class="service-tag">Scholarships</span>
-        </div>
-
-        <div class="price-block">
-          <div class="price-label">Early Bird Price</div>
-          <div class="price-row">
-            <span class="old-price">100 SAR</span>
-            <span class="new-price"><span>80 SAR</span></span>
-          </div>
-          <div class="price-note">Offer valid until 15 October.</div>
-        </div>
-      </div>
-
-      <div class="service-card">
-        <div class="service-number">04</div>
-        <h3>AI / STEM / Robotics / Coding</h3>
-        <p>
-          Engaging future-skills programs designed for <strong>Grade 4–7 students</strong>,
-          introducing young learners to technology, creativity and innovation.
-        </p>
-
-        <div class="service-tags">
-          <span class="service-tag">AI</span>
-          <span class="service-tag">STEM</span>
-          <span class="service-tag">Robotics</span>
-          <span class="service-tag">Coding</span>
-          <span class="service-tag">Scratch</span>
-          <span class="service-tag">Tinkercad</span>
-          <span class="service-tag">MIT App Inventor</span>
-          <span class="service-tag">Canva</span>
-        </div>
-
-        <div class="price-block">
-          <div class="price-label">Early Bird Price</div>
-          <div class="price-row">
-            <span class="old-price">50 SAR</span>
-            <span class="new-price"><span>30 SAR</span></span>
-          </div>
-          <div class="price-note">Offer valid until 15 October.</div>
-        </div>
-      </div>
-
-      <div class="service-card alt">
-        <div class="service-number">05</div>
-        <h3>Programming, Python & Data Analytics</h3>
-        <p>
-          Practical learning in programming, Python, data analysis and digital skills
-          for students looking to build technical expertise.
-        </p>
-
-        <div class="service-tags">
-          <span class="service-tag">Programming</span>
-          <span class="service-tag">Python</span>
-          <span class="service-tag">Data Analytics</span>
-        </div>
-
-        <div class="price-block">
-          <div class="price-label">Early Bird Price</div>
-          <div class="price-row">
-            <span class="old-price">80 SAR</span>
-            <span class="new-price"><span>60 SAR</span></span>
-          </div>
-          <div class="price-note">Offer valid until 15 October.</div>
-        </div>
-      </div>
-
-      <div class="service-card">
-        <div class="service-number">06</div>
-        <h3>Academic Guidance & Mentoring</h3>
-        <p>
-          Personalized educational guidance to help students make informed academic decisions
-          and plan their next steps with confidence.
-        </p>
-
-        <div class="service-tags">
-          <span class="service-tag">Mentoring</span>
-          <span class="service-tag">Academic Planning</span>
-        </div>
-
-        <div class="price-block">
-          <div class="price-label">Early Bird Price</div>
-          <div class="price-row">
-            <span class="old-price">100 SAR</span>
-            <span class="new-price"><span>80 SAR</span></span>
-          </div>
-          <div class="price-note">Offer valid until 15 October.</div>
-        </div>
-      </div>
+    <div class="early-bird-image-wrap">
+      <img src="early-bird-banner.png" alt="Limited Time Offer — Early Bird Discount. Start Early. Save More. Enroll by 15 October and unlock special pricing." class="early-bird-banner-image">
     </div>
   </div>
 </section>
@@ -1492,7 +1353,7 @@
 <section id="results" class="section results">
   <div class="container">
     <div class="section-header">
-      <div class="eyebrow">Student Achievement</div>
+      <div class="eyebrow">Students’ Achievements</div>
       <h2>Results That Speak for Themselves</h2>
       <p>Strong outcomes come from strong foundations, expert guidance and consistent effort.</p>
     </div>
@@ -1561,11 +1422,10 @@
       <div class="review-card">
         <div class="quote-mark">“</div>
         <p>
-          The teaching helped me understand concepts instead of simply memorizing them.
-          I became much more confident in my exams.
+          Global Gateway Academics played a key role in helping me secure admission and a scholarship to KAIST. Their guidance and support set me on a path that led to a fully funded PhD in the UK. Grateful for their expertise and dedication. Highly recommend them to anyone planning to study abroad!
         </p>
-        <div class="review-name">Abdul Wahab</div>
-        <div class="review-role">O/A Levels Student</div>
+        <div class="review-name">Sania Waheed</div>
+        <div class="review-role">MS AI, KAIST University, South Korea • PhD AI, University of Southampton</div>
       </div>
     </div>
   </div>
@@ -1588,13 +1448,14 @@
           <h3>Dr. Ahsan Shahzad</h3>
           <div class="faculty-role">Assistant Professor at NUST University</div>
           <ul>
-            <li>PhD in Electrical Engineering and Computer Science, GIST, South Korea</li>
-            <li>MS in Nano Bio Materials and Electronics, GIST, South Korea</li>
+            <li>PhD Electrical Engineering &amp; Computer Science, GIST, South Korea</li>
+            <li>MS Nano Bio Materials and Electronics, GIST, South Korea</li>
             <li>BS Electrical Engineering (Hons), University of Engineering and Technology (UET), Lahore, Pakistan</li>
             <li>Senior Patent Engineer at U.S. law firms</li>
             <li>AI Consultant</li>
             <li>Senior Member, IEEE</li>
             <li>Recipient of the Higher Education Commission (HEC) National Research Program for Universities (NRPU) Grant, 2026</li>
+            <li>10+ Years Teaching Experience</li>
           </ul>
         </div>
       </div>
@@ -1606,10 +1467,11 @@
           <div class="faculty-role">Assistant Professor at NUST University</div>
           <ul>
             <li>Postdoctoral Research, Texas A&amp;M University, USA</li>
-            <li>PhD in Electrical and Electronics Engineering, New York University, USA</li>
-            <li>MS in Microsystems Engineering, Masdar Institute of Science and Technology, UAE</li>
+            <li>PhD Electrical and Electronics Engineering, New York University, USA</li>
+            <li>MS Microsystems Engineering, Masdar Institute of Science and Technology, UAE</li>
             <li>BS Electrical Engineering (Hons), University of Engineering and Technology (UET), Lahore, Pakistan</li>
             <li>Top 2% Scientist by Elsevier</li>
+            <li>5+ Years Teaching Experience</li>
           </ul>
         </div>
       </div>
@@ -1639,6 +1501,7 @@
             <li>MSc Computer Science, University of Wah</li>
             <li>Lecturer at FG Postgraduate College</li>
             <li>Computer Science &amp; Programming Education</li>
+            <li>2+ Years Teaching Experience</li>
           </ul>
         </div>
       </div>
@@ -1653,7 +1516,7 @@
     <div class="section-header">
       <div class="eyebrow">Book a Demo</div>
       <h2>Tell Us What You Need</h2>
-      <p>Complete the short form below and our team will contact you with the right learning option.</p>
+      <p>Complete the short form below and our team will contact you soon.</p>
     </div>
 
     <div class="google-form-shell">
