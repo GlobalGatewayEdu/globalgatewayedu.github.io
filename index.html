@@ -1352,6 +1352,41 @@
  .hero-primary-actions>a{width:100%}
 }
 
+
+/* Compact first-screen layout: hero copy, photo and actions visible together */
+@media (min-width: 901px) {
+  .nav-inner {min-height:72px;gap:16px}
+  .site-logo {width:90px}
+  .header-brand-text {margin-left:8px}
+  .header-brand-name {font-size:1.3rem}
+  .header-brand-tagline {font-size:.8rem;margin-top:3px}
+  .nav-links {gap:14px}
+  .nav-links a {font-size:.82rem}
+  .oa-hero.hero {padding:24px 0 28px}
+  .oa-hero-grid {grid-template-columns:1.15fr .85fr;gap:32px;align-items:center}
+  .oa-hero .hero-badge {padding:7px 14px;font-size:.79rem;margin-bottom:8px}
+  .oa-hero h1 {font-size:clamp(2rem,3.6vw,3.65rem);line-height:1.04;margin:9px 0 12px}
+  .oa-hero .hero-subtitle {font-size:clamp(1rem,1.55vw,1.35rem);margin-bottom:10px;line-height:1.35}
+  .oa-hero .hero-description {font-size:.96rem;line-height:1.5}
+  .oa-hero .hero-primary-actions {margin-top:17px;gap:10px}
+  .oa-hero .hero-primary-actions a {padding:11px 16px;font-size:.92rem}
+  .college-photo-visual {min-height:0;border-radius:24px}
+  .college-photo-visual img {height: min(52vh,410px);min-height:0;object-fit:cover}
+}
+@media (min-width:901px) and (max-height:760px) {
+  .oa-hero.hero {padding:15px 0 18px}
+  .oa-hero h1 {font-size:clamp(1.95rem,3.2vw,3.15rem)}
+  .college-photo-visual img {height: min(48vh,340px)}
+}
+@media (max-width:900px) {
+  .oa-hero.hero {padding:30px 0}
+  .oa-hero h1 {font-size:clamp(2rem,8vw,3.1rem);margin:12px 0}
+  .oa-hero .hero-badge {margin-bottom:10px}
+  .oa-hero .hero-subtitle {margin-bottom:12px}
+  .oa-student-visual {order:0}
+  .college-photo-visual img {min-height:0;height:260px}
+}
+
 </style>
 </head>
 
